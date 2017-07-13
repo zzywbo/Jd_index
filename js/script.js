@@ -92,5 +92,83 @@ window.onload=function(){
         onImg();
         setTimeout(run,2000);
 
+
+
+    var login=document.getElementById('login'),
+        register=document.getElementById('register'),
+        lr=document.getElementById('login_register'),
+        _login=document.getElementById('_login'),
+        _register=document.getElementById('_register'),
+        bt_login=document.getElementById('bt_login'),
+        bt_register=document.getElementById('bt_register'),
+        name1=document.getElementById('name1'),
+        name2=document.getElementById('name2'),
+        pwd1=document.getElementById('pwd1'),
+        pwd2=document.getElementById('pwd2'),
+        rName=document.getElementById('rName');
+
+    login.onclick=function(){
+        lr.style.display='block';
+        _login.style.display='block';
+        _register.style.display='none';
+
+    }
+    register.onclick=function(){
+        lr.style.display='block';
+        _login.style.display='none';
+        _register.style.display='block';
+
+    }
+
+    name1.onblur=function(){
+        chcekName(name1,name1.value.trim());
+    }
+
+
+    function chcekName(ele,val){
+        if(document.getElementById('cc')){
+            ele.parentNode.removeChild(ele.parentNode.lastChild);
+        }
+        var p=document.createElement('p');
+        p.id="cc";
+        var strRegex = /^[a-zA-Z0-9_]+$/;  //^\\w+$/;
+        if(val){
+            if(!strRegex.test(val)){
+                p.innerHTML="用户名只能由6-18个数字、英文字母组成！";
+            }else{
+                 p.innerHTML="格式正确!";
+            }
+
+        }else{
+            p.innerHTML="用户名不能为空!";     
+        }
+        ele.parentNode.appendChild(p);
+    }
+
+    bt_login.onclick=function(){
+        var xhr=new XMLHttpRequest;
+        xhr.open("GET","info.txt");
+        xhr.send();
+        xhr.onreadystatechange = function() {
+        if (xhr.readyState===4) {
+            if (xhr.status===200) {
+            var obj=JSON.parse(xhr.responseText);
+                if(name1.value==obj.name&&pwd1.value==obj.pwd){
+                    lr.style.display='none';
+                    rName.innerHTML=obj.name;
+                    rName.style.color="red";
+                    login.innerHTML="";
+                    register.innerHTML="";
+                    alert("登录成功！");
+                }else{
+                    alert("用户名或密码错误！");
+                }
+            } else {
+                alert("发生错误：" + xhr.status);
+            }
+        } 
+    }
+    }
+
 }
 

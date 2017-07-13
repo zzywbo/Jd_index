@@ -13,9 +13,9 @@
 		<a href="#" class="lf">收藏京东</a>
 		<ul class="rt">
 		  <li class="lf">
-			  您好，欢迎来到京东
-			  <a href="#">[登录]</a>
-			  <a href="#">[免费注册]</a>
+			  您好<span id="rName"></span>，欢迎来到京东
+			  <a href="#" id="login">[登录]</a>
+			  <a href="#" id="register">[免费注册]</a>
 		  </li>
 		  <li>
 			  <b></b>
@@ -61,6 +61,31 @@
 		</ul>
 	  </div>
 	</header>
+	<div id="login_register">
+        <div id="_login">
+            <header><h1>登录京东账号</h1></header>
+            <hr/>
+            <label for="name">用户名：
+            <input type="text" id="name1" />
+            </label>
+            <label for="pwd">密  码：
+            <input type="password" id="pwd1" />
+            </label>
+            <button id="bt_login">登录</button>
+        </div>
+
+         <div id="_register">
+            <header><h1>注册京东账号</h1></header>
+            <hr/>
+            <label for="name">用户名：
+            <input type="text" id="name2" />
+            </label>
+            <label for="pwd">密  码：
+            <input type="password" id="pwd2" />
+            </label>
+            <button id="bt_register">注册</button>
+        </div>
+	</div>
 	<div id="top_main">
 	  <a href="#" class="lf">
 	    <img src="Images/logo-201305.png">

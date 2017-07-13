@@ -50,21 +50,21 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
 }
 li.vip a{
 	padding-left:29px;
-	background:url(Images/vip.jpg) no-repeat left center;
+	background:url(../Images/vip.jpg) no-repeat left center;
 }
 li.dakehu a{
 	padding-left:26px;
-	background:url(Images/dakehu.jpg) no-repeat left center;
+	background:url(../Images/dakehu.jpg) no-repeat left center;
 }
 li.app_jd a{
 	display:inline-block;
 	height:22px;
 	line-height:22px;
 	padding-left:18px;
-	background:url(Images/iconlist_2.png) no-repeat -128px -360px;
+	background:url(../Images/iconlist_2.png) no-repeat -128px -360px;
 }
 li.app_jd a:hover{
-	background:url(Images/iconlist_2.png) no-repeat -128px -399px;
+	background:url(../Images/iconlist_2.png) no-repeat -128px -399px;
 }
 li.service>a{
 	display:inline-block;
@@ -73,10 +73,10 @@ li.service>a{
 	line-height:26px;
 	border:1px solid transparent;
 	border-bottom:0;
-	background:url(Images/jt_down.jpg) no-repeat 95% center;
+	background:url(../Images/jt_down.jpg) no-repeat 95% center;
 }
 li.service>a:hover{
-	background:url(Images/jt_up.jpg) no-repeat 95% center;
+	background:url(../Images/jt_up.jpg) no-repeat 95% center;
 	border-color:#ddd;
 	background-color:#fff;
 }
@@ -97,6 +97,41 @@ li.service{
 li.service:hover #service_items{
 	display:block;
 }
+
+#login_register{
+	position: absolute;
+	top: 200px;
+	left: 40%;
+	width: 500px;
+	z-index: 200;
+	background-color: rgba(255, 255, 255, 1.0);
+	text-align: center;
+	line-height: 20px;
+	border: 2px solid #ccc;
+	border-radius: 5%;
+	display: none;
+	
+}
+#login_register label{
+	display: block;
+	margin: 20px auto;
+}
+#pwd1,#pwd2{
+	margin-left: 8px; 
+}
+#login_register button{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+}
+#_login{
+	display: none;
+}
+#_register{
+	display: none;
+}
+
 #top_main{
 	padding:10px 0;
 }
@@ -143,7 +178,7 @@ li.service:hover #service_items{
 	height:27px;
 	line-height:27px;
 	padding-right:5px;
-	background:#f7f7f7 url(Images/iconlist_2.png) no-repeat -116px -25px;
+	background:#f7f7f7 url(../Images/iconlist_2.png) no-repeat -116px -25px;
 	margin-top:3px;
 	width:72px;
 	position:relative;
@@ -171,7 +206,7 @@ li.service:hover #service_items{
 	width:40px;
 	height:40px;
 	margin:0 10px 0 50px;
-	background:url(Images/iconlist_2.png) no-repeat; 
+	background:url(../Images/iconlist_2.png) no-repeat; 
 }
 #foot_box ul{
 	float:left;
@@ -241,7 +276,7 @@ li.service:hover #service_items{
 	float:right;
 	width:20px;
 	height:20px;
-	background:url(Images/iconlist_2.png) no-repeat -65px 0;
+	background:url(../Images/iconlist_2.png) no-repeat -65px 0;
 	margin:10px 10px 0 0;
 }
 #nav li{
@@ -409,17 +444,17 @@ img{
 }
 #prev01{
 	left: 40px;
-	background: url(Images/index/ad-arraw.png) no-repeat;
+	background: url(../Images/index/ad-arraw.png) no-repeat;
 }
 #slider_box>a:hover {
-	background: url(Images/index/ad-arraw-hover.png) no-repeat;
+	background: url(../Images/index/ad-arraw-hover.png) no-repeat;
 }
 #next01{
 	left: 600px;
-	background: url(Images/index/ad-arraw.png) no-repeat 0 -35px;
+	background: url(../Images/index/ad-arraw.png) no-repeat 0 -35px;
 }
 #slider_box>a:hover#next01{
-	background: url(Images/index/ad-arraw-hover.png) no-repeat 0 -35px;
+	background: url(../Images/index/ad-arraw-hover.png) no-repeat 0 -35px;
 }
 
 
@@ -433,11 +468,11 @@ img{
 	float:left;
 	width:25px;
 	height:35px;
-	background:url(Images/index/ad-arraw.png) no-repeat;
+	background:url(../Images/index/ad-arraw.png) no-repeat;
 	margin-top:62px;
 }
 #ad>a:hover{
-	background-image:url(Images/index/ad-arraw-hover.png);
+	background-image:url(../Images/index/ad-arraw-hover.png);
 }
 #ad>a.next{
 	float:right;
@@ -511,7 +546,7 @@ img{
 	width:40px;
 	height:30px;
 	margin:10px auto;
-	background:url(Images/index/virtuals-20140606.png) no-repeat;
+	background:url(../Images/index/virtuals-20140606.png) no-repeat;
 }
 #virtuals li s.virtuals_2{
 	background-position:-63px 0;
@@ -557,28 +592,28 @@ img{
 	position:relative;
 }
 #show_box>ul>li.s01{
-	background:url(Images/index/show_01.jpg) no-repeat;
+	background:url(../Images/index/show_01.jpg) no-repeat;
 }
 #show_box>ul>li.s02{
-	background:url(Images/index/show_02.jpg) no-repeat;
+	background:url(../Images/index/show_02.jpg) no-repeat;
 }
 #show_box>ul>li.s03{
-	background:url(Images/index/show_03.jpg) no-repeat;
+	background:url(../Images/index/show_03.jpg) no-repeat;
 }
 #show_box>ul>li.s04{
-	background:url(Images/index/show_04.png) no-repeat;
+	background:url(../Images/index/show_04.png) no-repeat;
 }
 #show_box>ul>li.s05{
-	background:url(Images/index/show_05.jpg) no-repeat;
+	background:url(../Images/index/show_05.jpg) no-repeat;
 }
 #show_box>ul>li.s06{
-	background:url(Images/index/show_06.jpg) no-repeat;
+	background:url(../Images/index/show_06.jpg) no-repeat;
 }
 #show_box>ul>li.s07{
-	background:url(Images/index/show_07.jpg) no-repeat;
+	background:url(../Images/index/show_07.jpg) no-repeat;
 }
 #show_box>ul>li.s08{
-	background:url(Images/index/show_08.jpg) no-repeat;
+	background:url(../Images/index/show_08.jpg) no-repeat;
 }
 #show_box>ul>li.no_margin{
 	margin-left:0;
@@ -657,7 +692,7 @@ div.floor>header>span{
 	float:left;
 	width:26px;
 	height:32px;
-	background:url(Images/index/index_iconlist_01.png) no-repeat;
+	background:url(../Images/index/index_iconlist_01.png) no-repeat;
 	cursor:pointer;
 	text-align:center;
 	font-size:18px;
@@ -698,7 +733,7 @@ div.floor>header ul.tab li a{
 div.floor>header ul.tab li a:hover{
 	color:#e4393c;
 	border-color:#e4393c;
-	background:url(Images/index/tab_arraw.png) no-repeat center bottom;
+	background:url(../Images/index/tab_arraw.png) no-repeat center bottom;
 }
 div.floor ul.links li{
 	float:left;
@@ -804,14 +839,14 @@ div.floor>aside.rt li{
 	width:17px;
 	height:19px;
 	position:absolute;
-	background:url(Images/iconlist_3.png) no-repeat -200px -50px; 
+	background:url(../Images/iconlist_3.png) no-repeat -200px -50px; 
 	right:-10px;
 	top:0px;
 }
 #others div.share i.hot{
 	width:19px;
 	height:18px;
-	background:url(Images/iconlist_3.png) no-repeat -227px -50px;
+	background:url(../Images/iconlist_3.png) no-repeat -227px -50px;
 }
 #others div.share li>div{
 	float:left;
@@ -832,7 +867,7 @@ div.floor>aside.rt li{
 	min-height:23px;
 	max-height:32px;
 	overflow:hidden;
-	background:url(Images/iconlist_3.png) no-repeat 290px -80px; 
+	background:url(../Images/iconlist_3.png) no-repeat 290px -80px; 
 }
 #more{
 	width:311px;
@@ -874,7 +909,7 @@ div.floor>aside.rt li{
 	border-right-color:#eaeaea;
 	border-bottom-color:#eaeaea;
 	padding-left:28px;
-	background:url(Images/index/email.gif) no-repeat 5px center;
+	background:url(../Images/index/email.gif) no-repeat 5px center;
 }
 #more div.order button{
 	width:75px;
